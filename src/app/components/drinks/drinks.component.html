@@ -1,3 +1,28 @@
-<p>
-  drinks works!
-</p>
+<div class="container">
+  <div class="row">
+
+    <!-- LEFT COLOUMN -->
+    <div class="col-xs-2 col-md-3 col-lg-3">
+      <!-- BUTTON MENU -->
+      <div class="btn-group-vertical" role="group" aria-label="...">
+          <button type="button" class="btn btn-default">
+                  ONENENEN
+          </button>
+
+      </div>
+    </div>
+    <!--RIGHT COLOUMN -->
+    <div class="col-xs-10 col-sm-8 col-md-9 col-lg-9">
+      <!--RENDER INFORMATION-->
+      <div class="jumbotron">
+
+        <ul *ngFor="let beverage of drinksList">
+          <li>
+            {{beverage.kind}}
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</div>
