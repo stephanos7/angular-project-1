@@ -8,7 +8,7 @@ import drinksList from "./drinks";
 })
 export class DrinksComponent implements OnInit {
   drinksList: Object[];
-  activeKind;
+  activeSpirit: object;
 
   constructor() { }
 
@@ -16,9 +16,9 @@ export class DrinksComponent implements OnInit {
     this.drinksList = drinksList;
   }
 
-    selectKind(kind){
-      let activeKind: object = kind;
-      console.log(activeKind);
+    selectSpirit(spirit){
+      this.activeSpirit = spirit;
+      console.log(this.activeSpirit);
     }
 
   }
