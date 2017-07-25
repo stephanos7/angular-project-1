@@ -8,10 +8,18 @@ import drinksList from "./drinks";
 })
 export class DrinksComponent implements OnInit {
   drinksList: Object[];
+  activeKind;
 
   constructor() { }
 
   ngOnInit() {
+    this.drinksList = drinksList;
   }
 
-}
+    selectKind(kind){
+      let activeKind: object = kind;
+      console.log(activeKind);
+    }
+
+  }
+
