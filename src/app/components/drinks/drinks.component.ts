@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import drinksList from "./drinks";
+import { Spirit } from "../../shared/models/spirit";
+import spirits  from "./spirits";
+
 
 @Component({
   selector: 'app-drinks',
@@ -7,13 +9,14 @@ import drinksList from "./drinks";
   styleUrls: ['./drinks.component.css']
 })
 export class DrinksComponent implements OnInit {
-  drinksList: Object[];
-  activeSpirit: object;
+spirits: Object[] = spirits;
+activeSpirit: Object;
 
-  constructor() { }
+  constructor() { 
+
+  }
 
   ngOnInit() {
-    this.drinksList = drinksList;
   }
 
     selectSpirit(spirit){

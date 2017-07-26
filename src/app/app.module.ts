@@ -7,7 +7,8 @@ import { DrinksComponent } from './components/drinks/drinks.component';
 @NgModule({
   declarations: [
     AppComponent,
-    DrinksComponent
+    DrinksComponent,
+    
   ],
   imports: [
     BrowserModule

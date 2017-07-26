@@ -1,4 +1,6 @@
-const drinksList: object[] = [
+import { Spirit } from "../../shared/models/spirit";
+
+const spirits: Object[] = [
 {
   kind: "Whisky",
   cocktails: [{
@@ -17,4 +19,4 @@ const drinksList: object[] = [
 }
 ];
 
-export default drinksList;
+export default spirits;
