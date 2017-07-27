@@ -22,6 +22,9 @@
       <div class="jumbotron" *ngIf="activeSpirit">
         <div class="btn-group-vertical" role="group" aria-label="...">
             <p>{{activeSpirit.description}}<p>
+            <hr>
+            <h4>EDIT</h4>
+            <textarea class="form-control" rows="5" [(ngModel)]="activeSpirit.description"></textarea>
         </div>
       </div>
       <!--if no spirit has been selected-->
@@ -32,3 +35,5 @@
     </div>
   </div>
 </div>
+
+<app-new-form></app-new-form>
