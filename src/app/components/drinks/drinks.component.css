@@ -1,3 +1,11 @@
 .dashboard{
-  margin: 40px 0;
+  margin: 60px 0;
 }
+
+button{
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+

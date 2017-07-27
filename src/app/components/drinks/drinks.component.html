@@ -20,11 +20,13 @@
       <!--RENDER INFORMATION-->
       <!--if a spirit is selected-->
       <div class="jumbotron" *ngIf="activeSpirit">
-          <h2>{{activeSpirit.kind}}</h2>
+        <div class="btn-group-vertical" role="group" aria-label="...">
+            <p>{{activeSpirit.description}}<p>
+        </div>
       </div>
       <!--if no spirit has been selected-->
       <div class="jumbotron" *ngIf="!activeSpirit">
-          <h2>Welcome, please select a spirit from our list</h2>
+          <h3>Welcome, please select a spirit from our list</h3>
       </div>
 
     </div>
