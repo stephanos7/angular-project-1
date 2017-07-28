@@ -1,6 +1,5 @@
 <div class="container">
   <div class="row dashboard">
-
     <!-- LEFT COLOUMN -->
     <div class="col-xs-2 col-md-3 col-lg-3">
       <!-- BUTTON MENU -->
@@ -13,27 +12,17 @@
           </button>
       </div>
     </div>
-
-    <!--RIGHT COLOUMN -->
-    <div class="col-xs-10 col-sm-8 col-md-9 col-lg-9">
-
-      <!--RENDER INFORMATION-->
-      <!--if a spirit is selected-->
-      <div class="jumbotron" *ngIf="activeSpirit">
-        <div class="btn-group-vertical" role="group" aria-label="...">
-            <p>{{activeSpirit.description}}<p>
-            <hr>
-            <h4>EDIT</h4>
-            <textarea class="form-control" rows="5" [(ngModel)]="activeSpirit.description"></textarea>
-        </div>
-      </div>
-      <!--if no spirit has been selected-->
-      <div class="jumbotron" *ngIf="!activeSpirit">
+      
+      <!--RIGHT COLOUMN-->
+      <div class="col-xs-10 col-sm-8 col-md-9 col-lg-9">
+        <!--if no spirit has been selected-->
+        <div class="jumbotron" *ngIf="!activeSpirit">
           <h3>Welcome, please select a spirit from our list</h3>
+        </div>
+        <!--If a spirit has been selected-->
+        <app-spirit [spirit]="activeSpirit"></app-spirit>
       </div>
 
-    </div>
+ 
   </div>
 </div>
-
-<app-new-form></app-new-form>
