@@ -1,5 +1,5 @@
 .dashboard{
-  margin: 60px 0;
+  margin: 36px 0;
 }
 
 button{
@@ -9,5 +9,9 @@ button{
   padding-bottom: 9px;
 }
 
-
+button.btn.active{
+  background-color: lightcyan;
+  color: #3a3a3a;
+  box-shadow: none;
+}
 

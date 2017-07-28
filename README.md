@@ -1,3 +1,5 @@
+#Angular 2 Self-Paced Training Project
+
 # AngularProject1
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.3.
